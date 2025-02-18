@@ -9,22 +9,20 @@ nav a:focus, a:hover {
 
 /* Step 2a: Write selector/rule property to position the default position for the skip class element*/
 .skip a {
-     display: none;
      position: absolute;
      top: -40px;
-     background: white;
+     left: 0;
 }
 
 /* Step 2b: Write selector/rule property to position the skip class element when it is in focus*/
 .skip a:focus {
      top: 20px;
-     background: black; /* Higher contrast background */
-     color: white; /* Ensure text is readable */
-     outline: 2px solid yellow; /* Optional: Add an accessible focus outline */
+     visibility: visible;
 }
 
 /* Step 3: Write selector/rule property to style all elements when in focus*/
 *:focus {
+     outline: none;
      border: 2px solid black;
 }
 
@@ -104,8 +102,9 @@ first div in the grid  and place it in the grid. */
 
  /* Step 8: Write the selector/rule property to style the .text-block class. */
 .text-block {
-     margin: auto;
+     display: block;
      text-align: center;
+     padding: 15px;
 }
 
 /* Add your media query here */
