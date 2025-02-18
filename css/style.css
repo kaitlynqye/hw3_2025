@@ -9,13 +9,18 @@ nav a:focus, a:hover {
 
 /* Step 2a: Write selector/rule property to position the default position for the skip class element*/
 .skip a {
+     display: none;
      position: absolute;
      top: -40px;
+     background: white;
 }
 
 /* Step 2b: Write selector/rule property to position the skip class element when it is in focus*/
-.skip:focus {
+.skip a:focus {
      top: 20px;
+     background: black; /* Higher contrast background */
+     color: white; /* Ensure text is readable */
+     outline: 2px solid yellow; /* Optional: Add an accessible focus outline */
 }
 
 /* Step 3: Write selector/rule property to style all elements when in focus*/
